@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import "package:lesson107/prisentions/pages/widgets/your_recipe_item.dart";
-import 'package:lesson107/utils/utils.dart';
+import "package:lesson107/prisentions/widgets/pages/your_recipe_item.dart";
+
+import "../../../utils/utils.dart";
 
 
 class BodyContainer extends StatelessWidget {
@@ -16,11 +17,11 @@ class BodyContainer extends StatelessWidget {
           color: AppColors.textColor,
           borderRadius: BorderRadius.circular(20),
         ),
-        child: const Column(
+        child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Padding(
+            const Padding(
               padding: EdgeInsets.only(left: 18, top: 10),
               child: Text(
                 "Your Recipes",
@@ -39,7 +40,7 @@ class BodyContainer extends StatelessWidget {
                   star: '5',
                   desc: "15min",
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 15,
                 ),
                 YourRecipeItem(

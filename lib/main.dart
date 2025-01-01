@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:lesson107/prisentions/pages/widgets/body_container.dart';
-import 'package:lesson107/prisentions/pages/widgets/bottom_nav_bar.dart';
-import 'package:lesson107/prisentions/pages/widgets/top_chef.dart';
+import 'package:lesson107/prisentions/widgets/pages/bottom.dart';
 import 'package:lesson107/utils/utils.dart';
 
 void main() {
@@ -94,7 +92,7 @@ class HomeScreen extends StatelessWidget {
       ),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
+        children: <Widget>[
           const SizedBox(
             height: 19,
           ),
@@ -197,4 +195,12 @@ class HomeScreen extends StatelessWidget {
       ),
     );
   }
+}
+
+class TopChef {
+  const TopChef({required String image});
+}
+
+class BodyContainer {
+  const BodyContainer();
 }

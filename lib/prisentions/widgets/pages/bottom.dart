@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:lesson107/utils/utils.dart';
+import '../../../utils/utils.dart';
 
 class BottomNavBar extends StatelessWidget {
   const BottomNavBar({super.key});
